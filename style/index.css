@@ -1,1 +1,161 @@
 /* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0; 
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+body{
+    font-size: 1.8rem;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+
+h1{
+    font-size:2.4rem;
+}
+h2{
+    margin-left: 3%;
+    font-size: 2rem;
+   
+}
+img{
+    height: 30vh;
+    width: 80%;
+}
+
+.nav-bar{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.navigation{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.navigation a{
+
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+button {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    width: 40%;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+.hero-wrap{
+    margin: 2% auto; 
+    width: 90%;
+}
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1274&q=80") ;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 60%;
+    height: 30vh;
+} 
+div .text-wrap{
+    font-size: 1.8rem;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.row-30{
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+   
+}
+footer div{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+div .footer-bar{
+    display: flex;
+    align-items: center;
+    
+}
+
+nav {
+    width: 20%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#contact a{
+    text-decoration: none;
+    border: 3px dotted grey;
+    font-size: 1.6rem;
+    padding: 2% 4%;
+    color: black;
+}
+#contact a:hover{
+    color: white;
+    background-color: black;
+}
