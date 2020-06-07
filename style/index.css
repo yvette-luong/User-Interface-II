@@ -15,24 +15,24 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {  
 margin: 0;  
 padding: 0; 
-font-size: 100%;  
+font-size: 62.5%;  
 font: inherit;  
 vertical-align: baseline;  
 }
 
-*{
-    border: 1px dotted grey;
-}
+
+
 body{
-    font-size: 1.8rem;
-    font-family: 'Tenali Ramakrishna', sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    background-image:-webkit-linear-gradient(white,#F5F5F5,grey,black);
 }
 
 
 
 img{
-    height: 30vh;
-    width: 80%;
+    height: 35vh;
+    width: 95%;
 }
 section .header-content{
  display: flex;
@@ -47,10 +47,12 @@ section .header-content{
     align-items: center;
     margin: 0 auto;
 }
+
+
 .title {
     display: flex;
     width: 25%;
-    font-size: 3rem;
+    font-size: 4rem;
     justify-content: center;
     align-self: center;
 }
@@ -76,10 +78,11 @@ section .header-content{
 
 button {
     text-decoration: none;
-    font-size: 1.7rem;
-    font-family: 'Tenali Ramakrishna', sans-serif;
-    width: 40%;
-    border-radius: 10px;
+    font-size: 1.4rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    width: 30%;
+    height: 7vh;
+    padding: 1%;
 }
 
 button:hover{
@@ -91,11 +94,13 @@ button:hover{
 
 .hero-wrap{
     margin: 2% auto; 
-    width: 90%;
+    width: 92%;
 }
+
+
 .hero-image{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1274&q=80") ;
-    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80") ;
+    height: 70vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -103,6 +108,7 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+
 .hero-text {
     display: flex;
     justify-content: center;
@@ -112,15 +118,38 @@ button:hover{
     height: 30vh;
 } 
 div .text-wrap{
-    font-size: 1.8rem;
-    width: 55%;
+    font-size: 1.6rem;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.middle-content{
+    width: 50%;
+    margin: 2% auto;
+    padding: 3%;
+    font-style: italic;
+    background-color: #7B7D7D;
+    color: WHITE;
+    font-weight: lighter;
+    border-radius: 10px;
+}
+
+ h2{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#greeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #greeting h1{
     font-size: 4rem;
+
 }
 
 .gallery {
@@ -133,6 +162,7 @@ div .text-wrap{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 2%;
     
 }
 
@@ -141,14 +171,46 @@ div .text-wrap{
     align-content: space-around;
     justify-content: center;
     align-items: center;
-    width: 30%;
-   
+    width: 30%;  
+    margin: 2%;
 }
+.row-30 h3{
+    font-weight: bolder;
+    font-size: larger;
+    margin: 2%;
+    text-decoration: none;
+}
+.row-30 h3 a{
+    text-decoration: none;
+    color:white;
+}
+.row-wrap h3 a:hover{
+    font-size: larger;
+    font-weight: bolder;
+    color: #1A5276; 
+}
+
+
+.row-30 div{
+    box-shadow: 3px 3px 7px 2px #F7F9F9 ;
+}
+.row-wrap{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
 footer div{
     display: flex;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
 }
+
 div .footer-bar{
     display: flex;
     align-items: center;
@@ -166,12 +228,45 @@ nav {
 }
 #contact a{
     text-decoration: none;
-    border: 3px dotted grey;
+    border: 1px solid black;
     font-size: 1.6rem;
     padding: 2% 4%;
     color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder;
 }
 #contact a:hover{
     color: white;
     background-color: black;
+}
+@media(max-width: 500px) {
+   body {
+      background:white;
+    }
+    .row-30{
+        display: flex;
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        width: 50%;  
+        margin: 2%;
+    }
+    .row-30 h3{
+        font-weight: bolder;
+        font-size: larger;
+        margin: 2%;
+        text-decoration: none;
+    }
+    .row-30 h3 a{
+        text-decoration: none;
+        color: black;
+    }
+    .row-30 p{
+        color: black;
+    }
+    .row-wrap h3 a:hover{
+        font-size: larger;
+        font-weight: bolder;
+        color: #1A5276; 
+    }
 }
