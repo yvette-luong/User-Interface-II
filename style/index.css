@@ -76,7 +76,7 @@ section .header-content{
 }
 
 
-button {
+button{
     text-decoration: none;
     font-size: 1.4rem;
     font-family: 'Open Sans Condensed', sans-serif;
@@ -149,41 +149,39 @@ div .text-wrap{
 }
 #greeting h1{
     font-size: 4rem;
-
 }
 
-.gallery {
+button{
+    width: 45%;
+}
+
+.gallery{
     display: flex;
-    flex-direction: column;
-    
 }
+
 .row{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2%;
-    
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
-.row-30{
-    display: flex;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;
-    width: 30%;  
-    margin: 2%;
+.row-wrap{   
+    width: 25%;
 }
-.row-30 h3{
+
+.row-wrap h3{
     font-weight: bolder;
     font-size: larger;
     margin: 2%;
     text-decoration: none;
 }
-.row-30 h3 a{
+
+.row-wrap h3 a{
     text-decoration: none;
     color:white;
 }
+
 .row-wrap h3 a:hover{
     font-size: larger;
     font-weight: bolder;
@@ -191,13 +189,14 @@ div .text-wrap{
 }
 
 
-.row-30 div{
+div .row-wrap{
+    margin: 1%;
     box-shadow: 3px 3px 7px 2px #F7F9F9 ;
 }
 .row-wrap{
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 1%;
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
 }
@@ -213,8 +212,7 @@ footer div{
 
 div .footer-bar{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 nav {
@@ -223,39 +221,103 @@ nav {
     margin-bottom: 1%;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    
+    text-align: center;    
 }
+
 #contact a{
     text-decoration: none;
     border: 1px solid black;
-    font-size: 1.6rem;
-    padding: 2% 4%;
+    font-size: 1.4rem;
+    padding: 1% 2%;
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bolder;
 }
+
 #contact a:hover{
     color: white;
     background-color: black;
 }
-@media(max-width: 500px) {
-   body {
-      background:white;
-    }
-    .row-30{
+
+
+@media(max-width: 800px){
+    body{
+        background: #22223B;
+        color: #F2E9E4;
+     } 
+     
+    .nav-bar{
         display: flex;
-        align-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: smaller;
+    }
+    .navigation a{
+        font-size: 1.5rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        color:  #F2E9E4;
+        margin: 3%;
+        padding: 2%;
+    }  
+    #greeting h1{
+        width: 100%;
+        font-size: 2.3rem;
+        margin: 0 auto;
+    }
+    .hero-wrap{
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 50%;  
-        margin: 2%;
     }
+    .hero-image{
+        width: 90%;
+        height: 50vh;
+    }
+    .middle-content{
+        font-size: 1.1rem;
+        width: 50%;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2% auto;
+        padding: 2%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .row-wrap{   
+        width: 45%;
+    }
+    footer div{ 
+        align-items: center;    
+        width: 100%;
+        margin: 2% auto;
+    }
+}
+
+ @media(max-width: 500px) {
+   body {
+      background:white;
+      color: black;
+   }
+   
     section .header-content{
         display: flex;
         flex-direction: column;
     }
-     .nav-bar{
+
+    .nav-bar{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -276,16 +338,18 @@ nav {
         color: black;
         padding: 2%;
     }
-
+    .hero-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .hero-image{
         height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
-    .hero-text {
+    .hero-text{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -299,7 +363,7 @@ nav {
     }
 
     div #greeting{
-        width: 80%;      
+        width: 90%;      
     }
 
     #greeting h1{
@@ -307,54 +371,63 @@ nav {
         font-size: 3rem;
         margin: 0 auto;
     }
+
     .middle-content{
         width: 80%;
         padding: 2%;
         margin: 5% auto;
         font-family: 'Open Sans Condensed', sans-serif;
     }
+
     .gallery{
         display: flex;
         flex-direction: column;
     }
-              
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    
     .row{
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
+        margin: 2% auto;
+        padding: 2%;
         align-items: center;
-        margin: 2%; 
-        width: 100%; 
-    }
-
-    .row-30{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
         justify-content: center;
-        align-items: center;  
-        width: 45%;        
     }
-
-    .row-30 h3{
+    
+    .row-wrap{   
+        width: 45%;
+    }
+    
+    .row-wrap h3{
         font-weight: bolder;
         font-size: larger;
         margin: 2%;
         text-decoration: none;
     }
-    .row-30 h3 a{
+
+    div .row-wrap{
+        box-shadow: 3px 3px 7px 2px rgb(84, 88, 88) ;
+    }
+
+    .row-wrap h3 a{
         text-decoration: none;
         color: black;
     }
-    .row-30 p{
+
+    .row-wrap p{
         color: black;
     }
+
     .row-wrap h3 a:hover{
         font-size: larger;
         font-weight: bolder;
         color: #1A5276; 
     }
+
     footer div{
         display: flex;
         align-items: center;
@@ -367,7 +440,6 @@ nav {
     div .footer-bar{
         display: flex;
         align-items: center;
-    
     }
 
     nav{
@@ -378,7 +450,165 @@ nav {
     align-items: center;
     text-align: center;
     }
+
     .footer-bar a{
         background-color: #F5F5F5;
     }
-}
+} 
+
+
+
+
+
+
+
+/* PROJECT STYLE HERE */
+
+
+section .project-header-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .project-nav-bar{
+       display: flex;
+       width: 90%;
+       justify-content: space-between;  
+       align-items: center;
+       margin: 0 auto;
+   }
+   
+   
+   .project-title {
+       display: flex;
+       width: 25%;
+       font-size: 4rem;
+       justify-content: center;
+       align-self: center;
+       color: #F5F5F5;
+   }
+   
+   .project-navigation{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 5%;
+   }
+   .project-navigation a{
+       margin: 2%;
+       padding: 3%;
+       width: 40%;
+       color:whitesmoke;
+       font-size: 1.5rem;
+       text-decoration: none; 
+   }
+   .project-navigation a:hover{
+       color: white;
+       background-color:#7B7D7D;
+   }
+
+
+    .project-body{
+        background: #4A4E69;
+    }
+
+    .project-body h1{
+        font-family: 'Playfair Display', serif;
+        margin: 2% auto;
+        padding: 2%;
+        width: 80%;
+        color: black;
+        box-shadow: 2px 2px 7px 2px #F2E9E4;
+        background-color: #F2E9E4;
+        border-radius: 10px;
+    }
+
+    .project-gallery{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+    .project-body h1{
+        padding: 2% auto;
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 7px;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .project-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3% auto;
+        padding: 3%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div .row-wrap2{
+        box-shadow: 3px 3px 7px 2px #F2E9E4 ;
+        margin: 2%;
+    }
+
+    .row-wrap2{ 
+        font-family: 'Open Sans Condensed', sans-serif;
+        width: 40%;
+        padding: 2%;
+    }
+
+    .row-wrap2 h3{
+        text-decoration: none;
+    }
+
+    .row-wrap2 h3{
+        font-weight: bolder;
+        font-size: larger;
+        margin: 2%;
+        text-decoration: none;
+    }
+
+    .row-wrap2 h3 a,p{
+        text-decoration: none;
+        color:white;
+    }
+
+    .row-wrap2 h3 a:hover{
+        font-size: larger;
+        font-weight: bolder;
+        color: #C9ADA7; 
+        }
+
+
+@media(max-width:700px){
+
+    .project-gallery{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    .project-row{
+        display: flex;
+        flex-direction: column;
+    }
+    .row-wrap2{
+        width: 80%;
+    }
+/*     
+    .project-row{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1%;
+        padding: 2%;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+    div .row-wrap2{
+        margin: 4%;
+    }
+
+    .row-wrap2{   
+        width: 18%;
+    }   */
+} 
